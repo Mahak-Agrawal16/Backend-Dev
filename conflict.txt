@@ -1,1 +1,1 @@
-return "Hello from feature";
+hello from both branches
