@@ -17,4 +17,4 @@ git reset HEAD <file> # Unstage file
 git checkout -- <file> # Discard changes
 git clean -n # See untracked files
 git clean -fd # Remove untracked files
-git reflog # View all reference logs
+git reflog # View all reference logs..
