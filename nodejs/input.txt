@@ -4,4 +4,4 @@ I enjoy writing clean and efficient code, and I am especially interested in back
 I have hands-on experience with Node.js, file handling, arrays, strings, and basic algorithms like searching and recursion.
 I consider myself a quick learner, dedicated, and hardworking person. I like taking challenges because they help me grow both technically and personally.
 My goal is to become a skilled software developer and work in an organization where I can contribute my knowledge while continuously learning new technologies.
-Thank you for giving me this opportunity. I look forward to learning and growing with your team....
+Thank you for giving me this opportunity. I look forward to learning and growing with your team.
