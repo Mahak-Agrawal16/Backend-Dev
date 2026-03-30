@@ -1,0 +1,107 @@
+Exercise 1: Database Selection (SQL / NoSQL)
+1. Online Banking System → SQL Database
+ANS: 
+Requires strong consistency and transactions.
+Uses ACID properties for secure money transfers.
+Data structure is well organized (accounts, transactions, users).
+Example SQL databases: MySQL, PostgreSQL
+
+2. Social Media Platform → NoSQL Database
+ANS:
+Huge amount of unstructured data (posts, likes, comments).
+Needs horizontal scalability.
+Flexible schema for different types of content.
+Example: MongoDB, Cassandra
+
+3. Real-time Chat Application → NoSQL Database
+ANS:
+Handles large volumes of messages quickly.
+Needs high availability and fast reads/writes.
+Data structure changes frequently.
+Example: Firebase Realtime Database
+
+4. Hospital Patient Records → SQL Database
+ANS:
+Data must be accurate and consistent.
+Structured records (patients, doctors, treatments).
+Supports complex queries and relationships.
+Example: Oracle Database
+
+5. IoT Sensor Data Collection → NoSQL Database
+ANS:
+Massive real-time data streams.
+Schema may vary between sensors.
+Requires high scalability.
+Example: Apache Cassandra
+
+
+
+Exercise 2: CAP Theorem Analysis
+CAP Theorem = Consistency, Availability, Partition Tolerance
+
+1. Stock Trading Platform → Consistency + Partition Tolerance (CP)
+ANS:
+Data must always be correct (prices, trades).
+System can sacrifice availability during network issues.
+
+2. Content Delivery Network (CDN) → Availability + Partition Tolerance (AP)
+ANS:
+Users must always access content.
+Slight delay in consistency is acceptable.
+Example CDN: Cloudflare
+
+3. Airline Booking System → Consistency + Partition Tolerance (CP)
+ANS:
+Must avoid double booking of seats.
+Accurate transaction records required.
+
+4. Video Streaming Service → Availability + Partition Tolerance (AP)
+ANS:
+Service must remain available to users.
+Small delays in synchronization are acceptable.
+Example: Netflix
+
+
+Exercise 3: MongoDB Operations (Library System)
+Create Database
+
+use libraryDB
+1. Adding New Books:
+db.books.insertOne({
+  title: "Database Systems",
+  author: "Korth",
+  available: true
+})
+
+2. Finding Books by Author:
+db.books.find({ author: "Korth" })
+
+3. Updating Book Availability:
+db.books.updateOne(
+  { title: "Database Systems" },
+  { $set: { available: false } }
+)
+
+4. Tracking Borrowed Books by User:
+db.borrowed.insertOne({
+  userName: "Mahak",
+  bookTitle: "Database Systems",
+  borrowDate: new Date()
+})
+
+
+Exercise 4: JSON → BSON Conversion:
+{
+  "orderId": NumberInt(12345),
+  "orderDate": ISODate("2024-01-15T00:00:00Z"),
+  "totalAmount": NumberDecimal("99.99"),
+  "items": ["item1", "item2"]
+}
+Explanation
+orderId → Integer type
+
+orderDate → Date type
+
+totalAmount → Decimal number
+
+items → Array (already correct)
