@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-
 const userSchema = new mongoose.Schema({
   username: String,
   email: String,
@@ -7,5 +6,4 @@ const userSchema = new mongoose.Schema({
   bio: String,
   profileUrl: String
 });
-
 export default mongoose.model("User", userSchema);
