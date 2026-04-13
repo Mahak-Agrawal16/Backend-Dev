@@ -1,13 +1,8 @@
-// config/session.js
-
 import dotenv from "dotenv";
-dotenv.config();   // ✅ ADD THIS LINE
-
+dotenv.config();
 import session from "express-session";
 import MongoStore from "connect-mongo";
-
 console.log("SESSION FILE CHECK:", process.env.MONGO_URI); // debug
-
 export const sessionMiddleware = session({
   secret: process.env.SESSION_SECRET || "fallbacksecret",
   resave: false,
